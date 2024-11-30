@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Spider Register</title>
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="diagonal-divider"></div>
+        <div class="left">
+            <div class="logo-container">
+                <img src="imagenes/logo.png" alt="Logo" class="logo-image">
+                <div class="logo-text">
+                    <span class="hotel">HOTEL</span>
+                    <span class="spider">OASIS</span>
+                </div>
+            </div>
+            <p>¡Bienvenido, te estábamos esperando!</p>
+            <button class="switch-button" id="switch-to-login" onclick="window.location.href='login.html'">INICIAR SESIÓN</button>
+        </div>
+        <div class="right">
+            <form class="register-form" id="register-form">
+                <h2>REGISTRARSE</h2>
+                <div class="input-container">
+                    <input type="text" placeholder="Nombre completo" required>
+                </div>
+                <div class="input-container">
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <span class="icon">&#x2709;</span>
+                </div>
+                <div class="input-container">
+                    <input type="password" placeholder="Contraseña" required>
+                    <span class="icon">&#x1F512;</span>
+                </div>
+                <button type="submit">REGISTRARSE</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/scripts3_Register.js"></script>
+</body>
+</html>

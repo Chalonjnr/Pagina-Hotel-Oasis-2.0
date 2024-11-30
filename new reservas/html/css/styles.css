@@ -1,0 +1,433 @@
+/* Reseteo de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general y tipografía */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f4f8;
+    color: #333;
+    padding: 20px;
+}
+
+/* Contenedor principal para centrar contenido */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezados */
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Estilos de navegación */
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #3498db;
+    padding: 8px 15px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Formularios */
+form {
+    margin-top: 30px;
+    padding: 20px;
+    background: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Estilos para botones */
+form button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* Resultado de búsqueda o mensajes */
+#resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para cuadros de edición */
+#editar-seccion {
+    display: none;
+}
+
+#editar-seccion.active {
+    display: block;
+}
+
+/* Alineación del contenido */
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+input, select {
+    margin-top: 8px;
+}
+
+/* Footer y enlaces */
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el botón "Volver al inicio" */
+.btn-volver {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.btn-volver:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+}
+
+/* Centrar el botón "Volver al inicio" */
+.volver {
+    text-align: center; /* Alinea el contenido (el botón) al centro */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.btn-volver {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.btn-volver:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+}
+
+/* Centrar el botón "Volver al inicio" */
+.volver {
+    text-align: center; /* Alinea el contenido (el botón) al centro */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.btn-volver {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.btn-volver:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo básico para los campos del formulario */
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botón de envío */
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Mensajes de validación */
+.alerta {
+    color: red;
+    font-size: 14px;
+}
+.mensaje-confirmacion {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Texto en blanco */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el mensaje de confirmación */
+.mensaje-confirmacion {
+    color: green;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Estilos para las alertas de error */
+.alerta-error {
+    color: red;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select, button {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el mensaje de confirmación */
+.mensaje-confirmacion {
+    color: green;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Estilos para las alertas de error */
+.alerta-error {
+    color: red;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.mensaje-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.mensaje-confirmacion {
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.mensaje-error {
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* styles.css */
+
+/* Estilo para los botones de acción */
+.boton-modificar, .boton-regresar {
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambio de color al pasar el ratón */
+.boton-modificar:hover, .boton-regresar:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para el contenedor de los detalles de la reserva */
+.reserva-encontrada {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Asegura que los botones estén en la parte inferior */
+}
+
+/* Opciones de botones para modificar y regresar */
+.opciones {
+    margin-top: 30px; /* Añadir espacio entre los detalles de la reserva y los botones */
+    text-align: center;
+}
+
+/* Mensaje de error en caso de no encontrar la reserva */
+.mensaje-error {
+    color: red;
+    font-size: 16px;
+    margin-top: 20px;
+}
+/* Estilo para el botón de volver al inicio */
+.btn-volver-inicio {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+/* Cambio de color al pasar el ratón */
+.btn-volver-inicio:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para el contenedor de los botones */
+.volver-btn {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo para los botones de acción (modificar y regresar) */
+.boton-modificar, .boton-regresar {
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Cambio de color al pasar el ratón */
+.boton-modificar:hover, .boton-regresar:hover {
+    background-color: #45a049;
+}

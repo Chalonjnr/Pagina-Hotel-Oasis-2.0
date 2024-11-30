@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Hotel Oasis - Lima, Perú" />
+        <meta name="author" content="Hotel Oasis" />
+        <title>Bienvenidos a Hotel Oasis | Lima, Perú</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link href="css/rooms.css" rel="stylesheet" />
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="principal.html">Hotel OASIS</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Buscar..." aria-label="Buscar" aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">Configuración</a></li>
+                        <li><a class="dropdown-item" href="#!">Registro de Actividad</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#!">Cerrar Sesión</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Presentación</div>
+                            <a class="nav-link" href="principal.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Dashboard
+                            </a>
+                            <a class="nav-link" href="inicio.html">
+                                <div class="sb-nav-link-icon"><i class="bi bi-boxes"></i></div>
+                                Inicio
+                            </a>
+                            <a class="nav-link" href="nosotros.html">
+                                <div class="sb-nav-link-icon"><i class="bi bi-award-fill"></i></div>
+                                Nosotros
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Opciones</div>
+                            <a class="nav-link" href="habitaciones.html">
+                                <div class="sb-nav-link-icon"><i class="bi bi-journal-text"></i></div>
+                                Habitaciones
+                            </a>
+                            <a class="nav-link" href="reservas.html">
+                                <div class="sb-nav-link-icon"><i class="bi bi-suitcase-lg-fill"></i></div>
+                                Reservas
+                            </a>
+                            <a class="nav-link" href="contactanos.html">
+                                <div class="sb-nav-link-icon"><i class="bi bi-telephone-fill"></i></div>
+                                Contactanos
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Conectado como:</div>
+                        ADMINISTRADOR
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <!--CONTENIDO DEL DASHBOARD-->
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">Bienvenidos a Hotel Oasis</h1>
+                        <div class="card text-center" style="width: 18rem;">
+                            <div class="card-header">
+                              TOTAL DE HABITACIONES
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">15</h5>
+                              <a href="habitaciones.html" class="btn btn-primary">
+                                <div class="sb-nav-link-icon"><i class="bi bi-journal-text"></i>Habitaciones</div>
+                              </a>
+                            </div>
+                            <div class="card-footer text-body-secondary">
+                              Información Actualizada
+                            </div>
+                        </div>
+                        
+                        <!-- Segmentos de Habitaciones -->
+                        <div class="room-segment">
+                            <h2 class="mt-4">Tipos de Habitaciones</h2>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card room-card">
+                                        <img src="imagenes/individual.jpg" class="card-img-top" alt="Habitación Individual">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Habitación Individual</h5>
+                                            <p class="card-text">Cómoda habitación para una persona. Precio: $50 por noche.</p>
+                                            <a href="habitaciones.html" class="btn btn-primary">Ver más</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card room-card">
+                                        <img src="imagenes/doble.jpg" class="card-img-top" alt="Habitación Doble">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Habitación Doble</h5>
+                                            <p class="card-text">Ideal para dos personas. Precio: $80 por noche.</p>
+                                            <a href="habitaciones.html" class="btn btn-primary">Ver más</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card room-card">
+                                        <img src="imagenes/standard.jpg" class="card-img-top" alt="Habitación Standard">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Habitación Standard</h5>
+                                            <p class="card-text">Confortable y accesible, ideal para estancias cortas. Precio: $70 por noche.</p>
+                                            <a href="habitaciones.html" class="btn btn-primary">Ver más</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card room-card">
+                                        <img src="imagenes/deluxe.jpg" class="card-img-top" alt="Habitación Deluxe">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Habitación Deluxe</h5>
+                                            <p class="card-text">Lujo y comodidad. Precio: $120 por noche.</p>
+                                            <a href="habitaciones.html" class="btn btn-primary">Ver más</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card room-card">
+                                        <img src="imagenes/suite.jpg" class="card-img-top" alt="Suite">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Suite</h5>
+                                            <p class="card-text">Máxima elegancia y espacio. Precio: $200 por noche.</p>
+                                            <a href="habitaciones.html" class="btn btn-primary">Ver más</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Hotel Oasis, Lima Perú 2024 / Listos para recibir tus reservaciones</div>
+                            <div>
+                                <a href="#">Política de Privacidad</a>
+                                &middot;
+                                <a href="#">Términos &amp; Condiciones</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+    </body>
+</html>

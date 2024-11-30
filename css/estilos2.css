@@ -1,0 +1,224 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.header-banner {
+    text-align: center;
+    padding: 40px 0;
+    background-image: url('imagenes/banner.jpg'); /* Ruta relativa a la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo {
+    width: 80px; /* Ajusta el tamaño del logo */
+    margin-bottom: 10px;
+}
+
+.header-banner h1 {
+    margin: 0;
+    font-family: 'Merriweather', serif; /* Cambia la fuente a Merriweather */
+    font-weight: 700;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar legibilidad */
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 3rem; /* Ajusta el tamaño del texto */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+}
+
+
+main {
+    padding: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    grid-column: span 2;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input[type="text"], input[type="email"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.room-selection {
+    display: flex;
+    justify-content: space-between;
+    grid-column: span 2;
+}
+
+.room-selection label {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.room-selection label:hover {
+    transform: scale(1.05);
+}
+
+.room-selection img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+    border-radius: 5px;
+}
+
+button {
+    grid-column: span 2;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal button {
+    width: auto;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s;
+}
+
+.modal button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#confirmationMessage {
+    margin-bottom: 20px;
+}
+
+.btn-reservar {
+    padding: 10px 20px; /* Ajusta el padding según sea necesario */
+    border: none;
+    border-radius: 30px; /* Curvas redondeadas */
+    background-color: #007bff; /* Color de fondo azul profesional */
+    color: #fff; /* Color de texto blanco */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: 600; /* Peso de la fuente */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s;
+    width: auto; /* Ancho automático para ajustarse al contenido */
+    min-width: 120px; /* Ancho mínimo deseado */
+    display: inline-block; /* Para que respete el ancho mínimo */
+}
+
+.btn-reservar:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el mouse */
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+}
+
+.room-selection {
+    display: flex;
+    justify-content: space-between;
+    grid-column: span 2;
+}
+
+.room-selection label {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.room-selection label:hover {
+    transform: scale(1.05);
+}
+
+.room-selection input[type="radio"] {
+    display: none; /* Oculta el radio button */
+}
+
+.room-selection input[type="radio"]:checked + img {
+    border: 2px solid #007bff; /* Borde azul al seleccionar */
+}
+
+.room-selection input[type="radio"]:checked + img:hover {
+    border: 2px solid #0056b3; /* Borde azul más oscuro al pasar el mouse */
+}
